@@ -1,0 +1,171 @@
+/*------------------------ GLOBALS ------------------------*/
+
+/*------------ MEDIA QUERIES ------------*/
+/* Extra Small */
+@media(max-width:767px){
+    /*------------------------ ORGANIZERS ------------------------*/
+	#section-organizers.section-large{
+		height: auto;
+		background-color: #f5f5f5;
+	}
+	
+	#section-organizers .section-title{
+		color: #091727;
+	}
+	
+	#section-organizers #organizers-columns-wrapper{
+        background-image: url("../img/40.png");
+        background-position: center top 860px;
+        background-repeat: no-repeat;
+		background-size: 290px 2px;
+		margin-top: 35px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .organizers-columns{
+		margin-top: 60px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .parragraph-height{
+		height: auto;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-parragraph{
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text span{
+		margin-right: 5px;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+
+}
+
+/* Small */
+@media(min-width:768px) and (max-width:991px){
+    /*------------------------ ORGANIZERS ------------------------*/
+	#section-organizers.section-large{
+		height: auto;
+		background-color: #f5f5f5;
+	}
+	
+	#section-organizers .section-title{
+		color: #091727;
+	}
+	
+	#section-organizers #organizers-columns-wrapper{
+        background-image: url("../img/40.png");
+        background-position: center top 445px;
+        background-repeat: no-repeat;
+		background-size: 700px 2px;
+		margin-top: 35px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .organizers-columns{
+		margin-top: 60px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .parragraph-height{
+		height: auto;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-parragraph{
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text span{
+		margin-right: 5px;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+}
+
+/* Medium */
+@media(min-width:992px) and (max-width:1199px){
+    /*------------------------ ORGANIZERS ------------------------*/
+	#section-organizers.section-large{
+		background-color: #f5f5f5;
+	}
+	
+	#section-organizers .section-title{
+		color: #091727;
+	}
+	
+	#section-organizers #organizers-columns-wrapper{
+        background-image: url("../img/40.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+		background-size: 2px 530px;
+		margin-top: 35px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .parragraph-height{
+		height: 330px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-parragraph{
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text span{
+		margin-right: 5px;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+}
+
+/* Large */
+@media(min-width:1200px){
+    /*------------------------ ORGANIZERS ------------------------*/
+	
+	
+	#section-organizers .section-title{
+		color: #091727;
+	}
+	
+	#section-organizers #organizers-columns-wrapper{
+        background-image: url("../img/40.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+		background-size: 2px 490px;
+		margin-top: 35px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .parragraph-height{
+		height: 330px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-parragraph{
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	#section-organizers #organizers-columns-wrapper .section-text span{
+		margin-right: 5px;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+}

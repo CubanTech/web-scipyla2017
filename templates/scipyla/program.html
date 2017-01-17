@@ -1,0 +1,146 @@
+{% extends 'base_tpl.html' %}
+{% load static %}
+
+<!-- Begin Block Styles -->
+{% block styles %}
+	<link href="{% static 'css/navbar_simple.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/program.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/program_lightbox.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+<!-- End Block Styles -->
+
+<!-- Begin Block Main Navbar -->
+{% block main-navbar %}
+	{% include 'navbar_simple_tpl.html' %}
+{% endblock %}
+<!-- End Block Main Navbar -->
+
+<!-- Begin Block Content -->
+{% block content %}
+	<!-- Begin Section Program Ligghtbox -->
+	<section id="section-program-lightbox" class="row clearfix"></section>
+	<!-- End Section Program Ligghtbox -->
+
+    <!-- Begin Section Program -->
+    <section id="section-program" class="row clearfix section-large">
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h2 class="text-center text-uppercase section-title">Programa del Evento</h2>
+			<p class="text-center section-parragraph">Talleres Latinoamericanos sobre el uso de Python en:</p>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-36 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">Bioinform&aacute;tica</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">Bioinform&aacute;tica</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						SciPyLa 2017 sera la ocaci&oacute;n para explorar oportunidades de innovaci&oacute;n y conexi&oacute;n con la industria biotecnol&oacute;gica. Cuba
+						destaca dados sus 893 permisos comerciales registrados en m&aacute;s de 50 pa&iacute;ses. Conozca de primera mano c&oacute;mo la
+						biotecnolog&iacute;a se abre camino en la regi&oacute;n. <button id="myModalBtn" type="button" class="btn btn-link " data-toggle="modal" data-target="#myModal">Leer Mas</button>
+					</p>
+				</div>
+					<!-- Begin Program 1 Modal -->
+					<div class=" modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+					</div>
+					<!-- End Program 1 Modal -->
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-37 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">F&iacute;sica</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">F&iacute;sica</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						En el Taller se discutir&aacute;n los resultados m&aacute;s relevantes de los centros de investigacionesf&iacute;sicas de una regi&oacute;n que cuenta con
+						m&aacute;s de 15,000 profesionales. La asistencia de pa&iacute;ses menos desarrollados contribuir&aacute; a reducir las brechas en t&eacute;rminos de
+						educaci&oacute; e investigaci&oacute;n. <button id="myModalBtn2" type="button" class="btn btn-link " data-toggle="modal" data-target="#myModal">Leer Mas</button>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-40 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">Ingenier&iacute;a El&eacute;ctrica y Autom&aacute;tica</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">Ingenier&iacute;a El&eacute;ctrica y Autom&aacute;tica</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						SciPyLa 2017 sera la ocaci&oacute;n para explorar oportunidades de innovaci&oacute;n y conexi&oacute;n con la industria biotecnol&oacute;gica. Cuba
+						destaca dados sus 893 permisos comerciales registrados en m&aacute;s de 50 pa&iacute;ses. Conozca de primera mano c&oacute;mo la
+						biotecnolog&iacute;a se abre camino en la regi&oacute;n. <button type="button" class="btn btn-link" data-toggle="modal" data-target="#program-7">Leer m&aacute;s</button>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-40 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">Econom&iacute;a e Investigaci&oacute;n de Operaciones</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">Econom&iacute;a e Investigaci&oacute;n de Operaciones</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						SciPyLa 2017 sera la ocaci&oacute;n para explorar oportunidades de innovaci&oacute;n y conexi&oacute;n con la industria biotecnol&oacute;gica. Cuba
+						destaca dados sus 893 permisos comerciales registrados en m&aacute;s de 50 pa&iacute;ses. Conozca de primera mano c&oacute;mo la
+						biotecnolog&iacute;a se abre camino en la regi&oacute;n. <button type="button" class="btn btn-link" data-toggle="modal" data-target="#program-7">Leer m&aacute;s</button>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-40 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">Tecnolog&iacute;as Emergentes de C&oacute;mputo</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">Tecnolog&iacute;as Emergentes de C&oacute;mputo</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						SciPyLa 2017 sera la ocaci&oacute;n para explorar oportunidades de innovaci&oacute;n y conexi&oacute;n con la industria biotecnol&oacute;gica. Cuba
+						destaca dados sus 893 permisos comerciales registrados en m&aacute;s de 50 pa&iacute;ses. Conozca de primera mano c&oacute;mo la
+						biotecnolog&iacute;a se abre camino en la regi&oacute;n. <button type="button" class="btn btn-link" data-toggle="modal" data-target="#program-7">Leer m&aacute;s</button>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-40 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">Ciencias de la tierra</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">Ciencias de la tierra</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						SciPyLa 2017 sera la ocaci&oacute;n para explorar oportunidades de innovaci&oacute;n y conexi&oacute;n con la industria biotecnol&oacute;gica. Cuba
+						destaca dados sus 893 permisos comerciales registrados en m&aacute;s de 50 pa&iacute;ses. Conozca de primera mano c&oacute;mo la
+						biotecnolog&iacute;a se abre camino en la regi&oacute;n. <button type="button" class="btn btn-link" data-toggle="modal" data-target="#program-7">Leer m&aacute;s</button>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 program-wrapper">
+				<div class="program-left img-circle">
+					<span class="icon-40 program-icon"></span>
+				</div>
+				<div class="program-right">
+					<p class="text-left text-uppercase program-title visible-lg visible-md">Ciencias Sociales y Humanidades</p>
+					<a href=""><p class="text-left text-uppercase program-title visible-sm visible-xs">Ciencias Sociales y Humanidades</p></a>
+					<p class="text-justify section-parragraph visible-lg visible-md">
+						SciPyLa 2017 sera la ocaci&oacute;n para explorar oportunidades de innovaci&oacute;n y conexi&oacute;n con la industria biotecnol&oacute;gica. Cuba
+						destaca dados sus 893 permisos comerciales registrados en m&aacute;s de 50 pa&iacute;ses. Conozca de primera mano c&oacute;mo la
+						biotecnolog&iacute;a se abre camino en la regi&oacute;n. <button id="btn-7" type="button" class="btn btn-link" >Leer m&aacute;s</button>
+					</p>
+				</div>
+			</div>
+		</div>
+
+    </section>
+    <!-- End Section Program -->
+{% endblock %}
+<!-- End Block Content -->
+
+<!-- Begin Block Javascript -->
+{% block javascript %}
+	<script language="JavaScript" type="text/javascript" src="{% static 'js/program_lightbox.js' %}"></script>
+{% endblock %}
+<!-- End Block Javascript -->

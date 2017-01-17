@@ -1,0 +1,70 @@
+#main-navbar{
+    height: 60px;
+    background: none;
+}
+
+#main-navbar.navbar-default,
+#main-navbar.navbar{
+    background: none;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    height: 60px;
+}
+
+#main-navbar .navbar-brand{
+    height: 60px;
+    padding:0px;
+}
+
+#main-navbar .navbar-brand > img{
+    height: 60px;
+    margin:0px 20px;
+}
+
+#main-navbar .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+#main-navbar .navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+#main-navbar.navbar-default .navbar-nav > li > a {
+    color: #f5f5f5;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+
+#main-navbar.navbar-default .navbar-nav > li > a:hover,
+#main-navbar.navbar-default .navbar-nav > li > a:focus {
+    color: #f5e79e;
+}
+
+#main-navbar.navbar-default .navbar-nav > .open > a,
+#main-navbar.navbar-default .navbar-nav > .open > a:focus,
+#main-navbar.navbar-default .navbar-nav > .open > a:hover,
+#main-navbar.navbar-default .navbar-nav > .open > a,
+#main-navbar.navbar-default .navbar-nav > .open > a:focus,
+#main-navbar.navbar-default .navbar-nav > .open > a:focus{
+    background: none;
+}
+
+#main-navbar .dropdown-menu > li > a:focus,
+#main-navbar .dropdown-menu > li > a {
+    color: #091727;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+
+#main-navbar .dropdown-menu > li > a:focus,
+#main-navbar .dropdown-menu > li > a:hover,
+#main-navbar .dropdown-menu > li > a:focus,
+#main-navbar .dropdown-menu > li > a:focus {
+    color: #1b6d85;
+    text-decoration: none;
+}

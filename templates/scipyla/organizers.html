@@ -1,0 +1,71 @@
+{% extends 'base_tpl.html' %}
+{% load static %}
+
+<!-- Begin Block Styles -->
+{% block styles %}
+	<link href="{% static 'css/navbar_simple.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/organizers.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+<!-- End Block Styles -->
+
+<!-- Begin Block Main Navbar -->
+{% block main-navbar %}
+	{% include 'navbar_simple_tpl.html' %}
+{% endblock %}
+<!-- End Block Main Navbar -->
+
+<!-- Begin Block Content -->
+{% block content %}
+    <!-- Begin Section Header -->
+    <section id="section-organizers" class="row clearfix section-large">
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h2 class="text-center text-uppercase section-title">Organizadores</h2>
+		</div>
+		<div id="organizers-columns-wrapper" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<img class="center-block img-responsive" src="{% static 'img/29.png' %}">
+				<div class="col-lg-10 col-lg-offset-1 parragraph-height">
+					<p class="text-center section-parragraph">
+						El grupo Cuban Tech persigue crear un marco propicio para el desarrollo
+						abierto y colaborativo de tecnolog&iacute;as, y ofrece actividades de difusi&oacute;n y
+						educaci&oacute;n para que m&aacute;s personas accedan a soluciones de c&oacute;mputo y
+						de desarrollo de tecnolog&iacute;a. Somos una entidad sin animos de lucro que
+						acepta donaciones para apoyar el sector tecnol&oacute;gico de cubano.
+						Con apoyo de la PSF organizaremos el primer PyCon Cuba 2017.
+					</p>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p class="text-center section-text">M&aacute;s Informaci&oacute;n en:</p>
+					<p class="text-center section-text"><a href="https://www.cuban.tech"><span class="icon-10"></span>https://www.cuban.tech</a></p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 organizers-columns">
+				<img class="center-block img-responsive" src="{% static 'img/30.png' %}">
+				<div class="col-lg-10 col-lg-offset-1 parragraph-height">
+					<p class="text-center section-parragraph">
+						La Python Software Foundation (PSF) es una organizaci&oacute;n sin &aacute;nimo de
+						lucro y membres&iacute;a abierta, dedicada al mejoramiento de las tecnolog&iacute;as de
+						c&oacute;digo abierto relacionadas con el lenguaje de programaci&oacute;n Python. La
+						misma opera bajo las reglas del ep&iacute;grafe 501(c)(3) del US International Revenue
+						Code, siendo una organizaci&oacute;n caritativa, p&uacute;blica, exenta de grav&aacute;menes
+						tributarios, y de car&aacute;cter cient&iacute;fico y educacional.
+					</p>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p class="text-center section-text">M&aacute;s Informaci&oacute;n en:</p>
+					<p class="text-center section-text"><a href="https://www.python.org/psf"><span class="icon-10"></span>https://www.python.org/psf</a></p>
+				</div>
+			</div>
+		</div>
+
+    </section>
+    <!-- End Section Header -->
+{% endblock %}
+<!-- End Block Content -->
+
+<!-- Begin Block Javascript -->
+{% block javascript %}
+
+{% endblock %}
+<!-- End Block Javascript -->

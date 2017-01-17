@@ -1,0 +1,13 @@
+.lightbox-program-icon{
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	background-color: #ffd43b;
+	font-size: 6.0em;
+}
+
+.section-parragraph,
+.section-title{
+	color: #091727;
+	margin-top: 35px;
+}

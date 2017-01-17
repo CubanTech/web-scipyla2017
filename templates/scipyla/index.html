@@ -1,0 +1,570 @@
+{% extends 'base_tpl.html' %}
+{% load static %}
+
+<!-- Begin Block Styles -->
+{% block styles %}
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/navbar_scroll.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+<!-- End Block Styles -->
+
+<!-- Begin Block Main Navbar -->
+{% block main-navbar %}
+	{% include 'navbar_scroll_tpl.html' %}
+{% endblock %}
+<!-- End Block Main Navbar -->
+
+<!-- Begin Block Content -->
+{% block content %}
+    <!-- Begin Section Header -->
+    <section id="header" class="row clearfix section-large">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="text-center section-parragraph">
+                Conferencia Latinoamericana de Computaci&oacute;n Cient&iacute;fica con Python
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="text-center section-title visible-lg visible-md visible-sm">
+                M&aacute;s PYTHON, M&aacute;s CIENCIA
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="text-center section-title visible-xs">
+                M&aacute;s PYTHON <br> M&aacute;s CIENCIA
+            </p>
+            <p class="text-center">
+                <a href=""><span class="center-block icon-3"></span></a>
+            </p>
+        </div>
+
+    </section>
+    <!-- End Section Header -->
+
+    <!-- Begin Section - 2 -->
+    <section id="section-2" class="row clearfix section-large">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center text-uppercase section-title">SCIPY LATINOAMERICA 2017</h2>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <p class="text-center center-block section-parragraph">
+                Es la quinta conferencia anual de computaci&oacute;n cient&iacute;fica con Python, esta se realizar&aacute;
+                en mayo de 2017 en La Habana, Cuba. La comunidad SciPy se dedica al avance de la computaci&oacute;n
+                cient&iacute;fica a trav&eacute;z de software de c&oacute;digo abiertohecho en Python para resolver
+                problemas matem&aacute;ticos de las ciencias y la ingenier&iacute;a.
+            </p>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+            <ul class="nav nav-pills nav-justified center-block">
+                <li><a href="#"><p class="text-center text-uppercase">Python</p></a></li>
+                <li><a href="#"><p class="text-center text-uppercase">Ciencia</p></a></li>
+                <li><a href="#"><p class="text-center text-uppercase">Latino Am&eacute;rica</p></a></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- End Section - 2 -->
+
+    <!-- Begin Section - 3 -->
+    <section id="section-3" class="row clearfix section-short">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center text-uppercase section-title">LUGAR - LA HABANA</h2>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+            <p class="text-center section-parragraph">
+                La Habana, capital de Cuba, es la ciudad m&aacute;s grande del Caribe y uno de los centros urbanos con
+                mayor riquesa cultural en el munndo, cuyo pasado colonial queda evidenciado en la variedad de impresionantes
+                castillos, catedrales, mansiones y museos. El Hist&oacute;rico vecindario de La Habana Vieja es un fascinante
+                sitio designado Patrimonio de la Humanidad por la UNESCO, con mas de 900 monumentos hist&oacute;ricos, incluyendo
+                el Palacio Presidencial y la Plaza de la Catedral.
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="text-center">
+                <a class="btn btn-primary btn-lg blue-button" href="{% url 'organizers' %}" role="button">LEER M&Aacute;S</a>
+            </p>
+        </div>
+
+    </section>
+    <!-- End Section - 3 -->
+
+    <!-- Begin Section - 4 -->
+    <section id="section-4" class="row clearfix section-large">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center text-uppercase section-title">Organizaci&oacute;n del Evento</h2>
+        </div>
+
+        <div id="columns-wrapper" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="columns">
+                    <img class="img-responsive center-block" src="{% static 'img/9.png' %}">
+                    <p class="text-center text-uppercase items-title">programa</p>
+                    <p class="text-center section-text">
+                        Conozca el programa de temas preparado para
+                        SciPyLa 2017, a partir de talleres latinoamericanos
+                        sobre el uso de Python en 7 diferentes &aacute;reas de
+                        la Ciencia y la Tecnolog&iacute;a.
+                    </p>
+                </div>
+                <p class="text-center round-button-wrapper">
+                    <a class="btn btn-primary btn-lg text-uppercase blue-button" href="{% url 'programs' %}" role="button">VER M&Aacute;S</a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="columns">
+                    <img class="img-responsive center-block" src="{% static 'img/10.png' %}">
+                    <p class="text-center text-uppercase items-title">agenda</p>
+                    <p class="text-center section-text">
+                        Inf&oacute;mese sobre el cronograma de actividades
+                        previstas para los 4 d&iacute;as de duraci&oacute;n del evento
+                        en mayo de 2017 en La Habana.
+                    </p>
+                </div>
+                <p class="text-center round-button-wrapper">
+                    <a class="btn btn-primary btn-lg text-uppercase blue-button" href="{% url 'agenda' %}" role="button">VER M&Aacute;S</a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="columns">
+                    <img class="img-responsive center-block" src="{% static 'img/11.png' %}">
+                    <p class="text-center text-uppercase items-title">organizadores</p>
+                    <p class="text-center section-text">
+                        El evento de SciPyLa en su edici&oacute; 2017 estar&aacute;
+                        gestionado por "Cuban Tech Group" y la "Python
+                        Software Foundation". Conozca m&aacute;s sobre estos dos grupos organizadores.
+                    </p>
+                </div>
+                <p class="text-center round-button-wrapper">
+                    <a class="btn btn-primary btn-lg text-uppercase blue-button" href="{% url 'organizers' %}" role="button">VER M&Aacute;S</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Section - 4 -->
+
+    <!-- Begin Section - 5 -->
+    <section id="section-5" class="row clearfix section-large">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center text-uppercase section-title">Actividades por A&ntilde;o</h2>
+        </div>
+        <div id="graphic-header" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-activities-text">24</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-activities-text">35</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-activities-text">29</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-activities-text">16</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-activities-text">93*</p>
+			</div>
+		</div>
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			<img id="graphic-bars" class="img-responsive center-bloc" src="{% static 'img/12.png' %}">
+		</div>
+		<div id="graphic-years" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  col-sm-12 col-xs-12">
+			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-years-text">2013</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-years-text">2014</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-years-text">2015</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-years-text">2016</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-years-text">2017</p>
+			</div>
+		</div>
+		<div id="graphic-countries" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  col-sm-12 col-xs-12">
+			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+				<p class="text-center graphic-cities-text">Puerto <br> Madryn</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+				<p class="text-center graphic-cities-text">Bah&iacute;a <br> Blanca</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+				<p class="text-center graphic-cities-text">Posadas</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-countries-text">Brazil</p>
+				<p class="text-center graphic-cities-text">Florian&oacute;polis</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<p class="text-center text-uppercase graphic-countries-text">Cuba</p>
+				<p class="text-center graphic-cities-text">Habana</p>
+			</div>
+		</div>
+
+        <div id="graphic-footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-2 visible-lg">
+				<div class="graphic-footer-left-item">
+					<span class="icon-23"></span><p class="text-center section-text">Charlas</p><img class="img-responsive" src="{% static 'img/44.png' %}">
+				</div>
+				<div class="graphic-footer-left-item">
+					<span class="icon-27"></span><p class="text-center section-text">Talleres</p><img class="img-responsive" src="{% static 'img/44.png' %}">
+				</div>
+				<div class="graphic-footer-left-item">
+					<span class="icon-28"></span><p class="text-center section-text">Posters</p><img class="img-responsive" src="{% static 'img/44.png' %}">
+				</div>
+            </div>
+            <div class="col-lg-8 visible-lg col-md-10 visible-md col-sm-12 visible-sm col-xs-12 visible-xs">
+				<div class="row clearfix">
+					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle blue_circles">16</span>
+						</p>
+					</div>
+				</div>
+				<div class="row clearfix">
+					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1  col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle blue_circles">16</span>
+						</p>
+					</div>
+				</div>
+				<div class="row clearfix">
+					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1  col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle  yellow_circles">16</span>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="text-center text-uppercase graphic-countries-text">
+							<span class="center-block img-circle blue_circles">16</span>
+						</p>
+					</div>
+				</div>
+            </div>
+            <div class="col-lg-2 visible-lg">
+                <p class="text-left section-text right-blue-text">* <br> 2017</p>
+                <p class="text-left section-text white-blue-text">(Datos <br> Estimados)</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Section - 5 -->
+
+    <!-- Begin Section - 6 -->
+    <section id="section-6" class="row clearfix section-short">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center text-uppercase section-title">Galer&iacute;a - Ediciones Previas</h2>
+        </div>
+
+        <div id="section-gallery" class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 gallery-column">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <a href=""><img class="img-responsive center-block" src="{% static 'img/31.png' %}"></a>
+                    <p class="text-center items-title">2016</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <a href=""><img class="img-responsive center-block" src="{% static 'img/32.png' %}"></a>
+                    <p class="text-center items-title">2016</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 gallery-column">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <a href=""><img class="img-responsive center-block" src="{% static 'img/33.png' %}"></a>
+                    <p class="text-center items-title">2016</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <a href=""><img class="img-responsive center-block" src="{% static 'img/34.png' %}"></a>
+                    <p class="text-center items-title">2016</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Section - 6 -->
+
+    <!-- Begin Section - 7 -->
+    <section id="section-7" class="row clearfix section-large">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center text-uppercase section-title">Audiencia</h2>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p class="text-center section-parragraph section-parragraph">
+                <a class="text-nowrap" href="">Investigadores*</a> /
+                <a class="text-nowrap" href="">Estudiantes Universitarios</a> /
+                <a class="text-nowrap" href="">Aspirantes a Grado Cient&iacute;fico</a> /
+                <a class="text-nowrap" href="">Inversores</a> /
+                <a class="text-nowrap" href="">Coma&ntilde;&iacute;as</a> /
+                <a class="text-nowrap" href="">Agencias de Empleo</a>
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p id="section-7-footer" class="text-center sections-comments">
+                * Lor art&iacute;culos en el evento ser&aacute;n considerados publicaciones cient&iacute;ficas.
+            </p>
+        </div>
+
+    </section>
+    <!-- End Section - 7 -->
+
+    <!-- Begin Section - 8 -->
+    <section id="section-8" class="row clearfix section-large">
+
+        <div id="section-8-left" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="text-center text-uppercase section-title">&Aacute;rea Geogr&aacute;fica</h2>
+                <p class="text-center section-parragraph">de donde proviene la Audiencia</p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <ul id="section-8-audience-count" class="nav nav-pills nav-justified center-block visible-lg visible-md visible-sm">
+                    <li>
+                        <div class="img-circle audience-circle-blue1 center-block"></div>
+                        <p class="text-center text-uppercase section-text">700-1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-blue2 center-block"></div>
+                        <p class="text-center text-uppercase section-text">700-1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-blue3 center-block"></div>
+                        <p class="text-center text-uppercase section-text">700-1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-green center-block"></div>
+                        <p class="text-center text-uppercase section-text">700-1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-yellow center-block"></div>
+                        <p class="text-center text-uppercase section-text">700-1000</p>
+                    </li>
+                </ul>
+
+                <ul id="section-8-audience-count" class="nav nav-pills nav-justified center-block visible-xs">
+                    <li>
+                        <div class="img-circle audience-circle-blue1 center-block"></div>
+                        <p class="text-center section-text">700 a <br> 1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-blue2 center-block"></div>
+                        <p class="text-center section-text">700 a <br> 1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-blue3 center-block"></div>
+                      	<p class="text-center section-text">700 a <br> 1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-green center-block"></div>
+                        <p class="text-center section-text">700 a <br> 1000</p>
+                    </li>
+                    <li>
+                        <div class="img-circle audience-circle-yellow center-block"></div>
+                        <p class="text-center section-text">700 a <br> 1000</p>
+                    </li>
+                </ul>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<img id="google-analitics" class="img-responsive visible-sm visible-xs" src="{% static 'img/18.png' %}">
+			</div>
+			<div class="col-lg-12 col-md-12 visible-sm visible-xs">
+                <p class="text-center sections-comments">
+                    *Datos obtenidos a partir del inter&eacute;s manifestado por la audiencia hasta el momento (Ago, 2016)
+                </p>
+            </div>
+			<div class="col-lg-12 col-md-12 visible-lg visible-md">
+                <p class="text-center sections-comments">
+                    *Datos obtenidos a partir del inter&eacute;s manifestado por la audiencia hasta el momento
+                </p>
+            </div>
+
+        </div>
+
+        <div id="section-8-right" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="col-lg-9 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="text-center text-uppercase section-title">SciPyLa 2017</h2>
+                <p class="text-center section-parragraph">hasta el momento en las redes sociales...</p>
+            </div>
+            <div class="col-lg-9 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 social-stats">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <img class="img-responsive" src="{% static 'img/19.png' %}">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p class="text-center facebook-stats-counter">5033</p>
+					<p class="text-center social-button"><a href=""><img class="img-responsive center-block" src="{% static 'img/20.png' %}"></a></p>
+                </div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p class="text-center section-parragraph"><b>1200</b> interesados en la convocatoria</p>
+				</div>
+            </div>
+			<div class="col-lg-9 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 social-stats">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p class="text-center stats-counter">5033</p>
+					<p class="text-center social-button"><a href=""><img class="img-responsive center-block" src="{% static 'img/21.png' %}"></a></p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p class="text-center stats-counter">5033</p>
+					<p class="text-center social-button"><a href=""><img class="img-responsive center-block" src="{% static 'img/22.png' %}"></a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Section - 8 -->
+
+    <!-- Begin Section - 9 -->
+	<section id="section-9" class="row clearfix section-short">
+
+		<div class="col-lg-9 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+			<h2 class="text-center text-uppercase section-title">Suscripci&oacute;n</h2>
+		</div>
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			<p class="text-center section-parragraph">
+				El proceso de registro a&uacute;n no ha comenzado, pero si cree que este evento es para usted le sugerimos
+				mantenerse informado sobre las &uacute;ltimas noticias de SciPyLa 2017 a trav&eacute;z de nuestro newsletter:
+			</p>
+		</div>
+		<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+			<form action="" id="section-9-newsletter">
+				<div class="form-group">
+					<input type="email" class="form-control text-center" id="newsletter" placeholder="Inserte aqu&iacute; su email *">
+				</div>
+				<button type="submit" class="btn btn-default center-block text-uppercase yellow-button">Subscr&iacute;beme</button>
+			</form>
+		</div>
+
+	</section>
+    <!-- End Section - 9 -->
+
+    <!-- Begin Section - 10 -->
+	<section id="section-10" class="row clearfix section-large">
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h2 class="text-center text-uppercase section-title">contacto</h2>
+		</div>
+		<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+			<p class="text-center section-parragraph">
+				Nucleamos a los usuarios de Python en el &aacute;mbito cient&iacute;fico, para centralizar la
+				comunicaci&oacute;n a nivel regional. Sientase libre de contactarnos:
+			</p>
+		</div>
+		<div class="col-lg-6 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
+			<form id="{{ form.id }}" action="" method="POST">
+                {% csrf_token %}
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="form-group">
+						{{ form.name.errors }}
+                    	{{ form.name }}
+					</div>
+					<div class="form-group">
+						{{ form.email.errors }}
+                    	{{ form.email }}
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="form-group">
+						{{ form.phone.errors }}
+                    	{{ form.phone }}
+					</div>
+					<div class="form-group">
+						{{ form.company.errors }}
+                    	{{ form.company }}
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="form-group">
+						{{ form.subject.errors }}
+                    	{{ form.subject }}
+					</div>
+					<div class="form-group">
+						{{ form.message.errors }}
+                    	{{ form.message }}
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default center-block text-uppercase blue-button">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</section>
+    <!-- End Section - 10 -->
+
+{% endblock %}
+<!-- End Block Content -->
+
+<!-- Begin Block Javascript -->
+{% block javascript %}
+	<script language="JavaScript" type="text/javascript" src="{% static 'js/navbar-scroll.js' %}"></script>
+{% endblock %}
+<!-- End Block Javascript -->

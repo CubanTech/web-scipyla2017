@@ -1,0 +1,38 @@
+{% load static %}
+
+<nav id="main-navbar" class="row navbar navbar-default navbar-static-top"">
+  <div class="container-fluid">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="{% url 'index' %}">
+			<img class="img-responsive" src="{% static 'img/1.png' %}">
+		</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="main-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a class="text-center text-uppercase" href="#section-2">ACERCA DE</a></li>
+			<li><a class="text-center text-uppercase" href="#section-3">LUGAR</a></li>
+			<li class="dropdown">
+				<a class="text-center text-uppercase" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ORGANIZACI&Oacute;N <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a class="text-center text-uppercase" href="#section-4">Programa</a></li>
+					<li><a class="text-center text-uppercase" href="#section-4">Agenda</a></li>
+					<li><a class="text-center text-uppercase" href="#section-4">Organizadores</a></li>
+				</ul>
+			</li>
+			<li><a class="text-center text-uppercase" href="#section-6">Actividades por a&ntilde;o</a></li>
+			<li><a class="text-center text-uppercase" href="#section-7">AUDIENCIA</a></li>
+			<li><a class="text-center text-uppercase" href="#section-9">SUBSCRIPCI&Oacute;N</a></li>
+			<li><a class="text-center text-uppercase" href="#section-10">CONTACTO</a></li>
+		</ul>
+	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
