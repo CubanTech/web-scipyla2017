@@ -74,7 +74,7 @@
 		font-size: 1.3em;
 		line-height: 30px;
 	}
-	
+
 	#main-navbar .dropdown-menu > li > a:focus,
 	#main-navbar .dropdown-menu > li > a:hover,
 	#main-navbar .dropdown-menu > li > a:focus,
@@ -116,7 +116,7 @@
 	#main-navbar .dropdown-menu > li > a {
 		color: #091727;
 		font-size: 1.3em;
-		line-height: 0px;
+		line-height: 30px;
 	}
 }
 

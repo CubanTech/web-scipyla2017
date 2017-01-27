@@ -10,7 +10,7 @@
 
 <!-- Begin Block Main Navbar -->
 {% block main-navbar %}
-	{% include 'navbar_scroll_tpl.html' %}
+    {% include 'navbar_scroll_tpl.html' %}
 {% endblock %}
 <!-- End Block Main Navbar -->
 
@@ -56,11 +56,17 @@
             </p>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-            <ul class="nav nav-pills nav-justified center-block">
-                <li><a href="#"><p class="text-center text-uppercase">Python</p></a></li>
-                <li><a href="#"><p class="text-center text-uppercase">Ciencia</p></a></li>
-                <li><a href="#"><p class="text-center text-uppercase">Latino Am&eacute;rica</p></a></li>
-            </ul>
+            <div id="section-2-links" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="#"><p class="text-center text-uppercase">Python</p></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="#"><p class="text-center text-uppercase">Ciencia</p></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="#"><p class="text-center text-uppercase">Latino Am&eacute;rica</p></a>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -152,166 +158,337 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2 class="text-center text-uppercase section-title">Actividades por A&ntilde;o</h2>
         </div>
-        <div id="graphic-header" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-activities-text">24</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-activities-text">35</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-activities-text">29</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-activities-text">16</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-activities-text">93*</p>
-			</div>
-		</div>
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-			<img id="graphic-bars" class="img-responsive center-bloc" src="{% static 'img/12.png' %}">
-		</div>
-		<div id="graphic-years" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  col-sm-12 col-xs-12">
-			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-years-text">2013</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-years-text">2014</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-years-text">2015</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-years-text">2016</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-years-text">2017</p>
-			</div>
-		</div>
-		<div id="graphic-countries" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  col-sm-12 col-xs-12">
-			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-countries-text">Argentina</p>
-				<p class="text-center graphic-cities-text">Puerto <br> Madryn</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-countries-text">Argentina</p>
-				<p class="text-center graphic-cities-text">Bah&iacute;a <br> Blanca</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-countries-text">Argentina</p>
-				<p class="text-center graphic-cities-text">Posadas</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-countries-text">Brazil</p>
-				<p class="text-center graphic-cities-text">Florian&oacute;polis</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<p class="text-center text-uppercase graphic-countries-text">Cuba</p>
-				<p class="text-center graphic-cities-text">Habana</p>
-			</div>
-		</div>
 
-        <div id="graphic-footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="col-lg-2 visible-lg">
-				<div class="graphic-footer-left-item">
-					<span class="icon-23"></span><p class="text-center section-text">Charlas</p><img class="img-responsive" src="{% static 'img/44.png' %}">
-				</div>
-				<div class="graphic-footer-left-item">
-					<span class="icon-27"></span><p class="text-center section-text">Talleres</p><img class="img-responsive" src="{% static 'img/44.png' %}">
-				</div>
-				<div class="graphic-footer-left-item">
-					<span class="icon-28"></span><p class="text-center section-text">Posters</p><img class="img-responsive" src="{% static 'img/44.png' %}">
-				</div>
+        <div class="col-lg-12 visible-lg col-md-12 visible-md col-sm-12 visible-sm clearfix">
+            <div id="graphic-header" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">24</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">35</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">29</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">16</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">93*</p>
+                </div>
             </div>
-            <div class="col-lg-8 visible-lg col-md-10 visible-md col-sm-12 visible-sm col-xs-12 visible-xs">
-				<div class="row clearfix">
-					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle blue_circles">16</span>
-						</p>
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1  col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle blue_circles">16</span>
-						</p>
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1  col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle  yellow_circles">16</span>
-						</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-						<p class="text-center text-uppercase graphic-countries-text">
-							<span class="center-block img-circle blue_circles">16</span>
-						</p>
-					</div>
-				</div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <img id="graphic-bars" class="img-responsive center-bloc" src="{% static 'img/12.png' %}">
             </div>
-            <div class="col-lg-2 visible-lg">
-                <p class="text-left section-text right-blue-text">* <br> 2017</p>
-                <p class="text-left section-text white-blue-text">(Datos <br> Estimados)</p>
+            <div id="graphic-years" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  col-sm-12 col-sm-offset-1 col-xs-12">
+                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2013</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2014</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2015</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2016</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2017</p>
+                </div>
+            </div>
+            <div id="graphic-countries" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  col-sm-12 col-xs-12">
+                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+                    <p class="text-center graphic-cities-text">Puerto <br> Madryn</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+                    <p class="text-center graphic-cities-text">Bah&iacute;a <br> Blanca</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+                    <p class="text-center graphic-cities-text">Posadas</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Brazil</p>
+                    <p class="text-center graphic-cities-text">Florian&oacute;polis</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Cuba</p>
+                    <p class="text-center graphic-cities-text">Habana</p>
+                </div>
+            </div>
+
+            <div id="graphic-footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-2 visible-lg">
+                    <div class="graphic-footer-left-item">
+                        <span class="icon-23"></span><p class="text-center section-text">Charlas</p><img class="img-responsive" src="{% static 'img/44.png' %}">
+                    </div>
+                    <div class="graphic-footer-left-item">
+                        <span class="icon-27"></span><p class="text-center section-text">Talleres</p><img class="img-responsive" src="{% static 'img/44.png' %}">
+                    </div>
+                    <div class="graphic-footer-left-item">
+                        <span class="icon-28"></span><p class="text-center section-text">Posters</p><img class="img-responsive" src="{% static 'img/44.png' %}">
+                    </div>
+                </div>
+                <div class="col-lg-8 visible-lg col-md-10 col-md-offset-1 visible-md col-sm-12 visible-sm col-xs-12 visible-xs">
+                    <div class="row clearfix">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle blue_circles">16</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1  col-sm-2 col-sm-offset-1 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle blue_circles">16</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1  col-sm-2 col-sm-offset-1 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle  yellow_circles">16</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <p class="text-center text-uppercase graphic-countries-text">
+                                <span class="center-block img-circle blue_circles">16</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 visible-lg">
+                    <p class="text-left section-text right-blue-text">* <br> 2017</p>
+                    <p class="text-left section-text white-blue-text">(Datos <br> Estimados)</p>
+                </div>
             </div>
         </div>
+
+        <div id="section-5-mobile-wrapper" class="visible-xs">
+            <div id="graphic-header" class="col-xs-12">
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">24</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">35</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">29</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">16</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-activities-text">93*</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <img id="graphic-bars" class="img-responsive" src="{% static 'img/12.png' %}">
+            </div>
+
+            <div id="graphic-years" class="col-xs-12">
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2013</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2014</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2015</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2016</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-years-text">2017</p>
+                </div>
+            </div>
+            <div id="graphic-countries" class="col-xs-12">
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+                    <p class="text-center graphic-cities-text">Puerto <br> Madryn</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+                    <p class="text-center graphic-cities-text">Bah&iacute;a <br> Blanca</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Argentina</p>
+                    <p class="text-center graphic-cities-text">Posadas</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Brazil</p>
+                    <p class="text-center graphic-cities-text">Florian&oacute;polis</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-center text-uppercase graphic-countries-text">Cuba</p>
+                    <p class="text-center graphic-cities-text">Habana</p>
+                </div>
+            </div>
+
+            <div id="graphic-footer" class="col-xs-12">
+                <div class="col-xs-2">
+                    <div class="row">
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Charlas</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Talleres</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Posters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="row">
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Charlas</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Talleres</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Posters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="row">
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Charlas</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Talleres</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Posters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="row">
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Charlas</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Talleres</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle yellow_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Posters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="row">
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle blue_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Charlas</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle blue_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Talleres</p>
+                        </div>
+                        <div class="col-xs-12 graphic-footer-item">
+                            <span class="text-center img-circle blue_circles graphic-footer-item-left">16</span>
+                            <p class="text-right graphic-footer-item-right">Posters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="col-xs-12">
+                        <p class="text-left section-text right-blue-text">* <br> 2017</p>
+                    <p class="text-left section-text white-blue-text">(Datos <br> Estimados)</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-6">
+                    <a id="sec-5-left" href="">a</a>
+                </div>
+                <div class="col-xs-6">
+                    <a id="sec-5-right" href="">b</a>
+                </div>
+            </div>
+        </div>
+
 
     </section>
     <!-- End Section - 5 -->
@@ -518,10 +695,10 @@
 				comunicaci&oacute;n a nivel regional. Sientase libre de contactarnos:
 			</p>
 		</div>
-		<div class="col-lg-6 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
-			<form id="{{ form.id }}" action="" method="POST">
+		<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+			<form id="form-contact" action="" method="POST">
                 {% csrf_token %}
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="form-group">
 						{{ form.name.errors }}
                     	{{ form.name }}
@@ -531,7 +708,7 @@
                     	{{ form.email }}
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="form-group">
 						{{ form.phone.errors }}
                     	{{ form.phone }}
@@ -566,5 +743,6 @@
 <!-- Begin Block Javascript -->
 {% block javascript %}
 	<script language="JavaScript" type="text/javascript" src="{% static 'js/navbar-scroll.js' %}"></script>
+	<script language="JavaScript" type="text/javascript" src="{% static 'js/section_5_slide.js' %}"></script>
 {% endblock %}
 <!-- End Block Javascript -->

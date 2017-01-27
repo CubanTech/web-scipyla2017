@@ -1,25 +1,6 @@
 /*------------ MEDIA QUERIES ------------*/
 /* Extra Small */
 @media(max-width:767px){
-    /* --------------------- GLOBALS --------------------- */
-    .section-large,
-    .section-short{
-        height: 480px;
-    }
-
-    .section-title{
-        font-family: YanoneKaffeesatzRegular;
-        font-size: 1.8em;
-    }
-
-    .section-parragraph {
-        font-size: 1.2em;
-    }
-
-    #section-4.section-large{
-        height: auto;
-    }
-
     /* --------------------- HEADER --------------------- */
     #header{
         background-image: url("../img/2.png"), linear-gradient(to bottom, rgba(0, 0, 0, 75), rgba(0, 0, 0, 0.75)) , url("../img/37.png");
@@ -46,26 +27,23 @@
     /* --------------------- SECTION - 2 --------------------- */
     #section-2{
         background-color: #f5f5f5;
-        background-image: url("../img/4.png"), url("../img/5.png");
-        background-position: left bottom 44px, bottom 131px right 23px;
-        background-repeat: no-repeat;
-        background-size: 92%, 17%;
+    background-image: url("../img/4.png"), url("../img/5.png");
+    background-position: left 18px top 533px, top 531px right 9px;
+    background-repeat: no-repeat;
+    background-size: 92%, 17%;
     }
 
     #section-2 .section-parragraph{
         color: #091727;
         margin-top: 35px;
+        font-size: 1.4em;
     }
 
-    #section-2 ul.nav{
-        margin-top: 80px;
+    #section-2 #section-2-links{
+        margin-top: 110px;
     }
 
-    #section-2 .nav li{
-        float: left;
-    }
-
-    #section-2 ul.nav li a p{
+    #section-2 #section-2-links a p{
         font-family: RobotoCondensedBold;
         font-size: 1.0em;
         color: #091727;
@@ -87,6 +65,7 @@
     #section-3 .section-parragraph{
         color: #f5f5f5;
         margin-top: 10px;
+        font-size: 1.4em;
     }
 
     .blue-button{
@@ -127,12 +106,137 @@
     /* --------------------- SECTION-5 --------------------- */
     #section-5{
         background-color: #14365b;
-        background-image: url("../img/12.png");
+        /*background-image: url("../img/12.png");
         background-position: center top 100px;
         background-repeat: no-repeat;
         background-origin: content-box;
-        background-size: 55%;
-        height: auto;
+        background-size: 55%;*/
+    }
+
+    #section-5.section-large{
+        min-height: auto;
+    }
+
+    #section-5 .section-title{
+        color: #f5f5f5;
+    }
+
+    #section-5 #graphic-header{
+        margin-top: 20px;
+    }
+
+    #section-5 #graphic-bars{
+        height: 155px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #section-5 #graphic-years{
+        margin-top: 15px;
+    }
+
+    #section-5 #graphic-countries{
+        margin-top: 25px;
+    }
+
+    #section-5 #graphic-countries .graphic-countries-text{
+        font-size: 1.1em;
+    }
+
+    #section-5 #graphic-countries .graphic-cities-text{
+        font-size: 0.9em;
+    }
+
+    #section-5 #graphic-header .graphic-activities-text,
+    #section-5 #graphic-years .graphic-years-text,
+    #section-5 #graphic-countries .graphic-countries-text,
+    #section-5 #graphic-countries .graphic-cities-text{
+        color: #f5f5f5;
+        margin: 0px;
+    }
+
+	#section-5 #graphic-footer{
+		margin-top: 15px;
+	}
+
+    #section-5 #graphic-footer .graphic-footer-item{
+        display: inline-block;
+    }
+
+    #section-5 #graphic-footer .graphic-footer-item-left{
+        float: left;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: RobotoCondensedBold;
+        font-size: 1.0em;
+    }
+
+    #section-5 #graphic-footer .graphic-footer-item-right{
+        float: right;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: RobotoCondensedRegular;
+        font-size: 0.8em;
+        margin: 0px;
+        line-height: 23px;
+        color: #f5f5f5;
+    }
+
+	#section-5 #graphic-footer .graphic-footer-item .yellow_circles{
+		width: 20px;
+		background-color: #ffd43b;
+		color: #091727;
+	}
+
+	#section-5 #graphic-footer .graphic-footer-item .blue_circles{
+		width: 20px;
+		background-color: #3288b3;
+		color: #091727;
+	}
+
+	#section-5 #graphic-footer .graphic-footer-left-item{
+		display: inline-block;
+		float: right;
+	}
+
+	#section-5 #graphic-footer .graphic-footer-left-item *{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 3px;
+	}
+
+	#section-5 #graphic-footer .graphic-footer-left-item span{
+		display: inline-block;
+		font-size: 1.7em;
+		color: #f5f5f5;
+	}
+
+	#section-5 #graphic-footer .graphic-footer-left-item p{
+		display: inline-block;
+		color: #f5f5f5;
+		margin-left: 5px;
+	}
+
+	#section-5 #graphic-footer .graphic-footer-left-item img{
+		display: inline-block;
+		color: #f5f5f5;
+		margin-left: 10px;
+	}
+
+	#section-5 #graphic-footer .right-blue-text{
+        font-size: 0.8em;
+		color: #3288b3;
+		font-weight: bold;
+	}
+
+	#section-5 #graphic-footer .white-blue-text{
+        font-size: 0.8em;
+		color: #f5f5f5;
+	}
+
+    #section-5 #section-5-mobile-wrapper{
+        position: relative;
+        width: 640px;
     }
 
 
@@ -154,16 +258,20 @@
 
     /* --------------------- SECTION-7 --------------------- */
     #section-7{
-    background-color: #ffffff;
-    background-image: url("../img/13.png");
-    background-repeat: no-repeat;
-    background-position: center bottom 110px;
-    background-size: 70%;
-}
+        background-color: #ffffff;
+        background-image: url("../img/13.png");
+        background-repeat: no-repeat;
+        background-position: center top 305px;
+        background-size: 70%;
+    }
+
+    #section-7.section-large{
+        min-height: auto;
+    }
 
     #section-7 .section-parragraph{
     margin-top: 45px;
-}
+    }
 
     #section-7 .sections-comments{
         margin-top: 180px;
@@ -174,7 +282,7 @@
     #section-8{
         background-color: #f5f5f5;
         background-image: url("../img/40.png");
-        background-position: center top 575px;
+        background-position: center top 635px;
         background-repeat: no-repeat;
         background-size: 290px 0.3%;
     }
@@ -419,13 +527,14 @@
         background-size: 92%, 17%;
     }
 
-    #section-2 .section-parragraph{
-        color: #091727;
-        margin-top: 55px;
+    #section-2 #section-2-links{
+        margin-top: 340px;
     }
 
-    #section-2 ul.nav{
-        margin-top: 285px;
+    #section-2 #section-2-links a p{
+        font-family: RobotoCondensedBold;
+        font-size: 1.4em;
+        color: #091727;
     }
 
     /* --------------------- SECTION - 3 --------------------- */
@@ -818,18 +927,19 @@
     #section-2{
         background-color: #f5f5f5;
         background-image: url("../img/4.png"), url("../img/5.png");
-        background-position: left 50px bottom, bottom 290px right 60px;
+        background-position: left 50px top 340px, top 290px right 60px;
         background-repeat: no-repeat;
         background-size: 92%, 15%;
     }
 
-    #section-2 .section-parragraph{
-        color: #091727;
-        margin-top: 35px;
+    #section-2 #section-2-links{
+        margin-top: 410px;
     }
 
-    #section-2 ul.nav{
-        margin-top: 285px;
+    #section-2 #section-2-links a p{
+        font-family: RobotoCondensedBold;
+        font-size: 1.7em;
+        color: #091727;
     }
 
     /* --------------------- SECTION - 3 --------------------- */
@@ -1195,18 +1305,19 @@
     #section-2{
         background-color: #f5f5f5;
         background-image: url("../img/4.png"), url("../img/5.png");
-        background-position: left 180px bottom, bottom 307px right 160px;
+        background-position: left 80px top 240px, top 190px right 60px;
         background-repeat: no-repeat;
-        background-size: 75%, 12%;
+        background-size: 82%, 15%;
     }
 
-    #section-2 .section-parragraph{
+    #section-2 #section-2-links{
+        margin-top: 410px;
+    }
+
+    #section-2 #section-2-links a p{
+        font-family: RobotoCondensedBold;
+        font-size: 1.7em;
         color: #091727;
-        margin-top: 35px;
-    }
-
-    #section-2 ul.nav{
-        margin-top: 285px;
     }
 
     /* --------------------- SECTION - 3 --------------------- */
